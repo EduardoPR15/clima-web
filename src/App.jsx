@@ -20,16 +20,17 @@ const success = (pos) => {
 }
 navigator.geolocation.getCurrentPosition(success)
 }, [] )
+const language = navigator.language
+const lang1 = language.split("-");
+const lang = lang1[1]
+console.log(lang);
 
-
-
-//console.log(coords);
 
 //clima
 useEffect(() =>{
   if (coords) {
 
-      const URL = `https://api.openweathermap.org/data/2.5/weather?lat=${coords.lat}&lon=${coords.lon}&appid=${apiKey}&lang=es`
+      const URL = `https://api.openweathermap.org/data/2.5/weather?lat=${coords.lat}&lon=${coords.lon}&appid=${apiKey}&lang=${lang}`
       axios.get(URL)
       .then(res => setWeather(res.data))
       .catch(err => console.log(err))

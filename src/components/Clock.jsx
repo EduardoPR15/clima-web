@@ -18,10 +18,10 @@ export const Clock = () => {
     return (
     <div className='clock' >
     <div className="date">
-        <h2> {days} de {month} de {year}</h2>
+        <h3> {days} de {month} de {year}</h3>
     </div>
     <div className="time">
-        <h2> {hour}:{minutes}:{seconds} </h2>
+        <h3> {hour}:{minutes}:{seconds} </h3>
     </div>
         
     </div>

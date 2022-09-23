@@ -6,6 +6,7 @@ export const WeatherCard = ({weather}) => {
     console.log(weather);
     const celcius1 = (weather?.main.temp - 273.15)
     const celcius = celcius1.toFixed(2)
+    const farenheit = (celcius* 9/5 + 32 )
     const clouds = weather?.clouds.all
     const date = new Date
     let nubess = 2
@@ -29,17 +30,24 @@ export const WeatherCard = ({weather}) => {
 let style = nubes(nubess)
 return (
     <div className={style}>
-        <h1>el climaaaaaaaaaa</h1>
-        <div className='cardW'>
-            <h2>{weather?.name} {weather?.sys.country} </h2> 
-            <div>
+        <h1>el clima</h1> 
+            <div className='clockBox'> 
                 <Clock />
             </div>
-            <h3> Con una temperatura de {celcius}C° </h3>
-            </div>
-            <p>con una temperatura de {weather?.main.temp}F° </p>
+        <div className='WeatherImg'>
+            <p>aqui va el icono del clima :va</p>
+        </div>
+            <div className='cardW'>
+                <h1> {celcius} C° </h1>
+                <h2 className='text'>{weather?.weather[0].description}</h2> 
+                <h3>{weather?.name} {weather?.sys.country} </h3> 
+            </div> 
+           
+        
+           
+            <p>con una temperatura de {farenheit}F° </p>
             <p> humedad de {weather?.main.humidity}% {clouds} aa {style} </p>
-            <article> pruebas {weather?.weather[0].description} {weather?.feels_like}</article>
+            <article> {weather?.weather[0].description} {weather?.weather[0].main} </article>
     </div>
 )
 }
