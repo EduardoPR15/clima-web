@@ -3,6 +3,7 @@ import './App.css'
 import { useEffect } from 'react'
 import axios from 'axios'
 import { WeatherCard } from './components/WeatherCard'
+import { Clock } from './components/Clock'
 
 function App() {
 const [coords, setCoords] = useState()
@@ -28,7 +29,7 @@ navigator.geolocation.getCurrentPosition(success)
 useEffect(() =>{
   if (coords) {
 
-      const URL = `https://api.openweathermap.org/data/2.5/weather?lat=${coords.lat}&lon=${coords.lon}&appid=${apiKey}`
+      const URL = `https://api.openweathermap.org/data/2.5/weather?lat=${coords.lat}&lon=${coords.lon}&appid=${apiKey}&lang=es`
       axios.get(URL)
       .then(res => setWeather(res.data))
       .catch(err => console.log(err))
@@ -42,7 +43,8 @@ useEffect(() =>{
 
   return (
     <div className="App">
-   <WeatherCard weather={weather}/>
+    <WeatherCard weather={weather}/>
+
     </div>
   )
 }

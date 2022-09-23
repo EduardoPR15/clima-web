@@ -1,0 +1,12 @@
+.clouds{
+
+    background-color: red;
+}
+.cardW{
+    background-color: aqua;
+    width: auto;
+    height: 100%;
+    margin: auto;
+    margin-top: 200px;
+    text-align: center;
+}

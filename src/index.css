@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+
+}
+.App{
+    width: auto;
+    height: auto;
+}
+.WeatherCard{
+    background-color: aquamarine;
+}
+.clock{
+    background-color: red;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+.clase1{
+    background-color: white;
+
+}
+.clase2{
+    background-color: blueviolet;
+}
