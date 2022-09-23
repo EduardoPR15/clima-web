@@ -11,10 +11,12 @@ export const Clock = () => {
     let months = ["Enero","Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre","Octubre","Noviembre","Diciembre"]
     let month = months[dateNow.getMonth()]
     let year = dateNow.getFullYear()
-    //console.log(dateNow.getHours())
+    
+
+
     useEffect(() => {
         setInterval(() => setdateNow(new Date()), 1000);
-      }, []);
+    }, []);
     return (
     <div className='clock' >
     <div className="date">
