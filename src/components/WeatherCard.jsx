@@ -11,7 +11,7 @@ return (
     <div>
         <h1>el climaaaaaaaaaa</h1>
     
-    <p> estas en {weather?.name}</p>
+    <p> estas en {weather?.name} {weather?.sys.country}</p>
     <p>con una temperatura de {weather?.main.temp}F° </p>
     <p> en celcius  es {celcius}C° </p>
     <p> humedad de {weather?.main.humidity}%</p>
