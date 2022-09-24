@@ -16,7 +16,7 @@ export const WeatherCard = ({weather}) => {
     let nubess = 2
     const [cloudy, setCloudy] = useState()
     const [temperature, settemperature] = useState()
-settemperature(celcius)
+//settemperature(celcius)
 return (
     <div>
         <h1>el clima</h1> 
