@@ -4,6 +4,7 @@ import { useEffect } from 'react'
 import axios from 'axios'
 import { WeatherCard } from './components/WeatherCard'
 import { Clock } from './components/Clock'
+import { Loading } from './components/Loading'
 
 function App() {
 const [coords, setCoords] = useState()
@@ -39,13 +40,35 @@ useEffect(() =>{
     }
 
 },[coords])
+let clouds = weather?.weather[0].main
+let nubess = "Rain"
+function nubes(nube)    {
+  if (nube == "Clouds") {
+console.log("Clouds");
+let clases = "Clouds"
+return clases
+}
+  if (nube == "Rain" ) {
+console.log("Rain");
+let clases = "Rain"
+return clases
+
+
+}
+
+                      }
+let style = "App" + " " + nubes(clouds)
+console.log(style);
+console.log(weather?.weather[0].main)
 
 
 
   return (
-    <div className="App">
+    <div className={style}>
+   {   weather ?
     <WeatherCard weather={weather}/>
-
+    : <Loading />
+   }    
     </div>
   )
 }

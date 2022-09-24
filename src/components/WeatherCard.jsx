@@ -11,28 +11,14 @@ export const WeatherCard = ({weather}) => {
     const feels = (weather?.main.feels_like - 273.15).toFixed(0) 
     const clouds = weather?.clouds.all
     const date = new Date
+    let condition = weather?.weather[0].main
+    console.log(condition);
     let nubess = 2
     const [cloudy, setCloudy] = useState()
     const [temperature, settemperature] = useState()
-//settemperature({celcius, farenheit})    
-    function nubes(nube)    {
-        if (nube == 1) {
-    //console.log("1");
-    let clases = "clase1"
-    return clases
-    }
-        if (nube == 2) {
-    ///console.log("2");
-    let clases = "clase2"
-    return clases
 
-    
-    }
-    
-                            }
-let style = nubes(nubess)
 return (
-    <div className={style}>
+    <div>
         <h1>el clima</h1> 
             <div className='clockBox'> 
                 <Clock />
@@ -49,9 +35,9 @@ return (
             </div> 
         
         
-        
+        <button> Change</button>
             <p>con una temperatura de {farenheit}F° </p>
-            <p> humedad de {weather?.main.humidity}% {clouds} aa {style} </p>
+            <p> humedad de {weather?.main.humidity}% {clouds} aa </p>
             <article> o </article>
             <h2></h2>
     </div>

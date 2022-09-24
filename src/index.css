@@ -10,6 +10,8 @@
     margin: auto;
     width: auto;
     height: auto;
+    
+    
 }
 .WeatherCard{
     background-color: aquamarine;
@@ -22,21 +24,24 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
     text-align: right;
+    background-image: ;
 
 }
-
-.clase1{
-    background-color: white;
+.Rain{
+    background-image: url(../background/nick-nice-ve-R7PCjJDk-unsplash.jpg);
+    background-size: contain;
+    width: 100%;
+    height: 100vh;
 
 }
-.clase2{
-    background-color: blueviolet;
-    width: 100%
+.Clouds {
+    background-image: url(../background/daoudi-aissa-Pe1Ol9oLc4o-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
 }
-.clouds{
 
-    background-color: red;
-}
 .cardW{
     background-color: aliceblue;
     border-radius: 10px;
