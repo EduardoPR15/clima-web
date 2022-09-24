@@ -8,6 +8,7 @@ export const WeatherCard = ({weather}) => {
     const celcius1 = (weather?.main.temp - 273.15)
     const celcius = celcius1.toFixed(2)
     const farenheit = (celcius* 9/5 + 32 )
+    const feels = (weather?.main.feels_like - 273.15).toFixed(2) 
     const clouds = weather?.clouds.all
     const date = new Date
     let nubess = 2
@@ -42,14 +43,15 @@ return (
             <div className='cardW'>
                 <h1> {celcius} C° </h1>
                 <h2 className='text'>{weather?.weather[0].description}</h2> 
-                <h3>{weather?.name} {weather?.sys.country} </h3> 
+                <h2>{weather?.name} {weather?.sys.country} </h2> 
+                <h3> Sensacion termica {feels} C°</h3>
             </div> 
         
         
         
             <p>con una temperatura de {farenheit}F° </p>
             <p> humedad de {weather?.main.humidity}% {clouds} aa {style} </p>
-            <article> {weather?.weather[0].description} {weather?.weather[0].main} </article>
+            <article> o </article>
     </div>
 )
 }

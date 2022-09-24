@@ -44,7 +44,7 @@
     grid-template-columns: 1fr 1fr;
     width:auto;
     height: 100%;
-    margin-top: 200px;
+    margin-top: 20px;
     margin-left: 10px;
     margin-right: 10px;
 
@@ -56,3 +56,12 @@
 
 }
 
+.iconW{
+width: 150px;
+height: 200px;
+
+}
+.iconW img{
+    width: 100%;
+
+}
