@@ -12,6 +12,7 @@ let hour = dateNow.getHours()
 // console.log(hour);
 // let horas = 5;
 // console.log(horas);
+const clearNight = 'public\night\luna-llena.png'
 
 function dianoche(hours) {
     if (hours <= 19 && hours >= 5 ) {
@@ -63,7 +64,7 @@ if (condition == "Clear" && dias == "dia") {
 if (condition == "Clear" && dias == "noche") {
     console.log("lloviendo");
     return(
-        <div className='iconW'><h2>Despejado<img src="public\night\luna-llena.png" alt="" /></h2></div>
+        <div className='iconW'><h2>Despejado<img src={clearNight} alt="" /></h2></div>
     )
 }
 
