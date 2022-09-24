@@ -12,7 +12,7 @@ let hour = dateNow.getHours()
 // console.log(hour);
 // let horas = 5;
 // console.log(horas);
-const clearNight = 'public\night\luna-llena.png'
+const clearNight = '\night\luna-llena.png'
 
 function dianoche(hours) {
     if (hours <= 19 && hours >= 5 ) {

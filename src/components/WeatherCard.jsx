@@ -6,14 +6,15 @@ export const WeatherCard = ({weather}) => {
 
     //console.log(weather);
     const celcius1 = (weather?.main.temp - 273.15)
-    const celcius = celcius1.toFixed(2)
+    const celcius = celcius1.toFixed(0)
     const farenheit = (celcius* 9/5 + 32 )
-    const feels = (weather?.main.feels_like - 273.15).toFixed(2) 
+    const feels = (weather?.main.feels_like - 273.15).toFixed(0) 
     const clouds = weather?.clouds.all
     const date = new Date
     let nubess = 2
     const [cloudy, setCloudy] = useState()
-    
+    const [temperature, settemperature] = useState()
+//settemperature({celcius, farenheit})    
     function nubes(nube)    {
         if (nube == 1) {
     //console.log("1");
@@ -52,6 +53,7 @@ return (
             <p>con una temperatura de {farenheit}F° </p>
             <p> humedad de {weather?.main.humidity}% {clouds} aa {style} </p>
             <article> o </article>
+            <h2></h2>
     </div>
 )
 }
