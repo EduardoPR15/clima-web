@@ -5,7 +5,7 @@ export const IconWeather = ({weather,Clock}) => {
     //console.log(weather);
     //console.log(Clock.dateNow);
 //let condition = weather?.weather[0].description
-let condition = "Clear"
+let condition = "snow"
 //console.log(condition);
 const [dateNow, setdateNow] = useState(new Date())
 let hour = dateNow.getHours()
@@ -360,7 +360,7 @@ if (condition == "tornado" || condition == "tornado") {
 if (condition == "Clear" && dias == "dia") {
    // console.log("lloviendo");
     return(
-        <div className='iconW'><h2>Despejado<img src="public\soleado.png" alt="" /></h2></div>
+        <div className='iconW'><h2>Despejado<img src="./soleado.png" alt="" /></h2></div>
     )
 }
 if (condition == "Clear" && dias == "noche") {

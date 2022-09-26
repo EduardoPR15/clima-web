@@ -127,7 +127,7 @@ if (nube == "Tornado" ) {
       }
       
     }
-let style = "App" + " " + nubes(nubess)
+let style = "App" + " " + nubes(clouds)
 console.log(style);
 console.log(weather?.weather[0].main)
 
