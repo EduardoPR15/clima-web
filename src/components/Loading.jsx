@@ -3,10 +3,9 @@ import "../styles/Loading.css"
 
 export const Loading = () => {
   return (
-<div class="container">
-    <div class="ball">
-        <div class="button"></div>
-    </div>
-</div>
+    <div className="back">
+      <div class="spinner"></div>
+      </div>
+
   )
 }

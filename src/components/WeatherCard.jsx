@@ -19,7 +19,6 @@ export const WeatherCard = ({weather, temperature}) => {
     
 return (
     <div>
-        <h1>el clima</h1> 
             <div className='clockBox'> 
                 <Clock />
             </div>
