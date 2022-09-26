@@ -1,9 +1,11 @@
 .back{
+    margin: auto;
     background-color: black;
-    width: 100vh;
-    height: 100vh;
+    width: 1000vh;
+    height: 1000vh;
 }
 .spinner {
+    margin: auto;
     border: 4px solid rgba(0, 0, 0, 0.1);
     width: 36px;
     height: 36px;
