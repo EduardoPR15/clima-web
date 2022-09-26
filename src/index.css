@@ -27,9 +27,95 @@
     background-image: ;
 
 }
-.Rain{
-    background-image: url(../background/nick-nice-ve-R7PCjJDk-unsplash.jpg);
-    background-size: contain;
+.Clear{
+    background-image: url(../background/Clear.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    
+}
+.Thunderstorm{
+    background-image: url(../background/Thunderstorm.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    
+}
+.Drizzle{
+    background-image: url(../background/Drizzle.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.Mist{
+    background-image: url(../background/Mist.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.Snow{
+    background-image: url(../background/Snow.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.Smoke{
+    background-image: url(../background/Thunderstorm.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.Haze{
+    background-image: url(../background/Haze.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.Dust{
+    background-image: url(../background/Dust.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.Fog{
+    background-image: url(../background/Fog.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.Sand{
+    background-image: url(../background/Sand.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.Dust{
+    background-image: url(../background/Dust.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.Ash{
+    background-image: url(../background/Ash.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.Squall{
+    background-image: url(../background/Squall.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.Tornado{
+    background-image: url(../background/Tornado.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.Rain1{
+    background-image: url(../background/Rain1.jpg);
+    background-size: cover;
     width: 100%;
     height: 100vh;
 
