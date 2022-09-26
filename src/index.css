@@ -15,7 +15,8 @@
     
 }
 .clockBox{
-    padding-top: 100px;
+    padding-top: 20px;
+    padding-bottom: ;
 }
 .clock{
     margin: auto;
@@ -154,7 +155,9 @@
     text-transform: capitalize;
 
 }
-
+.WeatherImg{
+    margin-top: 5px;
+}
 .iconW{
 min-width: 150px;
 min-height: 200px;
@@ -172,7 +175,7 @@ text-align: center;
 }
 .iconW h2{
     border-radius: 10px;
-    margin-top: 20vh;
+    margin-top: 50px;
     background: linear-gradient(to top, rgba(252, 252, 252, 0.459),rgba(255, 255, 255, 0.74));
     color: black;
 }

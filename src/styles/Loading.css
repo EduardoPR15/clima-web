@@ -1,8 +1,7 @@
 .back{
-    margin: auto;
     background-color: black;
-    width: 1000vh;
-    height: 1000vh;
+    width: 100vh;
+    height: 100vh;
 }
 .spinner {
     margin: auto;
