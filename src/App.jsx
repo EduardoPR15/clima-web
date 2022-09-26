@@ -33,7 +33,7 @@ console.log(lang);
 useEffect(() =>{
   if (coords) {
 
-      const URL = `https://api.openweathermap.org/data/2.5/weather?lat=${coords.lat}&lon=${coords.lon}&appid=${apiKey}&lang=${lang}`
+      const URL = `https://api.openweathermap.org/data/2.5/weather?lat=${coords.lat}&lon=${coords.lon}&appid=${apiKey}`
       axios.get(URL)
       .then(res =>{
         const celDeg = (res.data.main.temp - 273.15).toFixed(0)
@@ -48,7 +48,7 @@ useEffect(() =>{
 },[coords])
 ////---------------------------PANTALA DE FONDO------------------------------/////
 let clouds = weather?.weather[0].main
-let nubess = "Ash"
+//let nubess = "Rain"
 function nubes(nube)    {
   if (nube == "Clouds") {
 console.log("Clouds");

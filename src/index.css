@@ -1,10 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 :root{
-
+    font-family: 'Poppins', sans-serif;
 }
 .App{
     margin: auto;
@@ -13,18 +14,19 @@
     
     
 }
-.WeatherCard{
-    background-color: aquamarine;
-}
 .clock{
+    margin: auto;
     width: auto;
-    height: auto;
-    background-color: aqua;
+    max-width: 500px;
+    height: 50px;
+    background: linear-gradient(to top, rgba(252, 252, 252, 0.459),rgba(255, 255, 255, 0.74));
     border-radius: 5px;
     display: grid;
     grid-template-columns: 2fr 1fr;
     text-align: right;
-    background-image: ;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding-top: 10px;
+
 
 }
 .Clear{
@@ -113,7 +115,7 @@
     width: 100%;
     height: 100vh;
 }
-.Rain1{
+.Rain{
     background-image: url(../background/Rain1.jpg);
     background-size: cover;
     width: 100%;
@@ -129,17 +131,20 @@
 }
 
 .cardW{
-    background-color: aliceblue;
+    max-width: 500px;
+    color: black;
     border-radius: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     width:auto;
     height: 100%;
-    margin-top: 20px;
+    margin: auto;
+    /* margin-top: 20px;
     margin-left: 10px;
-    margin-right: 10px;
-
+    margin-right: 10px; */
+    background: linear-gradient(to top, rgba(252, 252, 252, 0.459),rgba(255, 255, 255, 0.74));
     text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .text{
 
@@ -148,11 +153,55 @@
 }
 
 .iconW{
-width: 150px;
-height: 200px;
+min-width: 150px;
+min-height: 200px;
+max-width: 300px;
+max-height: 350px;
+
+margin: auto;
+text-align: center;
 
 }
 .iconW img{
     width: 100%;
+    height: 100%;
 
 }
+.iconW h2{
+    border-radius: 10px;
+    margin-top: 20vh;
+    background: linear-gradient(to top, rgba(252, 252, 252, 0.459),rgba(255, 255, 255, 0.74));
+    color: black;
+}
+.Toggle{
+color: black;
+margin: auto;
+margin-top: 10px;
+align-items: center;
+background: linear-gradient(to top, rgba(252, 252, 252, 0.459),rgba(255, 255, 255, 0.74));
+border: 0;
+border-radius: 8px;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+box-sizing: border-box;
+display: flex;
+font-size: 20px;
+justify-content: center;
+line-height: 1em;
+max-width: 100%;
+min-width: 140px;
+padding: 19px 24px;
+text-decoration: none;
+user-select: none;
+-webkit-user-select: none;
+touch-action: manipulation;
+white-space: nowrap;
+cursor: pointer;
+font-family: 'Poppins', sans-serif;
+}
+
+.button-63:active,
+.button-63:hover {
+outline: 0;
+}
+
+

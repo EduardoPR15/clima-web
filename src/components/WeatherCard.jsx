@@ -24,7 +24,7 @@ return (
                 <Clock />
             </div>
         <div className='WeatherImg'>
-            <p>aqui va el icono del clima :va</p>
+    
             <IconWeather weather={weather} Clock={Clock} />
         </div>
             <div className='cardW'>
@@ -35,10 +35,7 @@ return (
             </div> 
         
         
-        <button onClick={toggleTemp}> {isCelcius ? `Change to °F` : `Change to °C` } </button>
-            <p> humedad de {weather?.main.humidity}% {clouds} aa </p>
-            <article> o </article>
-            <h2></h2>
+        <button className='Toggle' onClick={toggleTemp}> {isCelcius ? `Change to °F` : `Change to °C` } </button>
     </div>
 )
 }
